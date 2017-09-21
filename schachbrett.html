@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>schachbrett verzerrt</title>
+<meta name=Keywords content="div schachbrett">
+<meta name="Description" content="ein verzerrtes Schachbrett">
+
+<!-- selector { eigenschaft; wert; .....} -->
+<style>
+    body{
+		background-image:url("checkerboard-sphere-2.jpg");
+		}
+    
+    table{
+        margin:0 auto;
+        border:solid blue medium;
+        border:outset 10px blue;
+            background-color:red;
+            transform:perspective(500px) rotateX(45deg);
+    }
+    td{
+        width:50px;
+        height:50px;
+        text-align:center;
+        color:black;
+        
+        }
+        tr:nth-child(odd) td:nth-child(even),
+        tr:nth-child(even) td:nth-child(odd){background:#2C2C2C;}
+
+	
+</style> <!--margin ist der Abstand zum äußeren Rand, padding, der Abstand zum inneren Rand-->
+</head>
+<body>
+    <div>
+    <table>	<!-- mit UTF8 Zeichen belegt -->
+        <tr><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td></tr>
+        <tr><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td></tr>
+        <tr><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td></tr>
+        <tr><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td></tr>
+        <tr><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td></tr>
+        <tr><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td></tr>
+        <tr><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td></tr>
+        <tr><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td></tr>
+    </table>
+    </div>
+</body>
+</html>
