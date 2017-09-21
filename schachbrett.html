@@ -22,7 +22,13 @@
         border:thick red solid;
         font-size: 40px;
         box-shadow: 10px 10px 5px 5px #808080;
-            transform:perspective(500px) rotateX(45deg);
+            transform: rotateX(45deg);
+        }
+
+    #blumenvase{
+        background-color:transparent;
+        perspective: 500px;
+        perspective-origin: 150% 50%;
     }
 
     td{
@@ -45,7 +51,7 @@
 </style> <!--margin ist der Abstand zum äußeren Rand, padding, der Abstand zum inneren Rand-->
 </head>
 <body>
-    <div>
+    <div id="blumenvase">
     <table>	<!-- mit UTF8 Zeichen belegt -->
         <tr><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td></tr>
         <tr><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td><td>&#9819;</td><td>&#9817;</td></tr>
